@@ -124,5 +124,4 @@ Este documento fornece instruções para a instalação do Robot Framework em si
 
 
 ## Observações: 
-    Para garantir que todos os membros da equipe estejam usando a mesma versão do Python e do Robot Framework, considere especificar versões no requirements.txt
     É recomendável que todos os membros da equipe sigam as mesmas etapas de instalação para evitar problemas de compatibilidade.
