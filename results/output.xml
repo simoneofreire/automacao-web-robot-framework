@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on darwin)" generated="2025-03-25T19:51:39.303996" rpa="false" schemaversion="5">
+<suite id="s1" name="Exercicio Argumentos" source="/Users/simoneof/Documents/RobotFramework/VariaveisEscoposArgumentos/exercicio_argumentos.robot">
+<test id="s1-t1" name="Gerar Email Customizado" line="9">
+<kw name="Criar Email">
+<kw name="Generate Random String" owner="String">
+<msg time="2025-03-25T19:51:39.339308" level="INFO">${palavra_aleatoria} = sttste</msg>
+<var>${palavra_aleatoria}</var>
+<arg>6</arg>
+<arg>letters</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-03-25T19:51:39.339146" elapsed="0.000189"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-03-25T19:51:39.339539" level="INFO">${email} = MayFernandessttste@testerobot.com</msg>
+<var>${email}</var>
+<arg>${nome}${sobrenome}${palavra_aleatoria}${EMAIL_DOMAIN}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-03-25T19:51:39.339412" elapsed="0.000144"/>
+</kw>
+<return>
+<value>${email}</value>
+<status status="PASS" start="2025-03-25T19:51:39.339588" elapsed="0.000033"/>
+</return>
+<msg time="2025-03-25T19:51:39.339683" level="INFO">${email} = MayFernandessttste@testerobot.com</msg>
+<var>${email}</var>
+<arg>May</arg>
+<arg>Fernandes</arg>
+<status status="PASS" start="2025-03-25T19:51:39.338819" elapsed="0.000875"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>O email gerado é: ${email}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-25T19:51:39.339772" elapsed="0.000095"/>
+</kw>
+<status status="PASS" start="2025-03-25T19:51:39.338422" elapsed="0.001517"/>
+</test>
+<status status="PASS" start="2025-03-25T19:51:39.305520" elapsed="0.034635"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Exercicio Argumentos" id="s1" pass="1" fail="0" skip="0">Exercicio Argumentos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
